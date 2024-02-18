@@ -99,6 +99,10 @@ async function onApproveCallback(data, actions) {
 
 window.paypal
   .Buttons({
+    style: {
+      shape: "pill",
+      layout: "vertical",
+    },
     createOrder: createOrderCallback,
     onApprove: onApproveCallback,
   })

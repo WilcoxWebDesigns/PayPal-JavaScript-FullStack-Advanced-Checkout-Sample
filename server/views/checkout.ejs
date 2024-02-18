@@ -10,10 +10,10 @@
       href="https://www.paypalobjects.com/webstatic/en_US/developer/docs/css/cardfields.css"
     >
     <script
-      src="https://www.paypal.com/sdk/js?components=buttons,hosted-fields&client-id=<%= clientId %>"
-      data-client-token="<%= clientToken %>"
-      data-sdk-integration-source="integrationbuilder_ac"
-    ></script>
+        src="https://www.paypal.com/sdk/js?client-id=test&components=buttons,hosted-fields&enable-funding=venmo&disable-funding=paylater"
+        data-client-token="<%= clientToken %>"
+        data-sdk-integration-source="integrationbuilder_ac">
+    </script>
   </head>
   <body>
     <div id="paypal-button-container" class="paypal-button-container"></div>
